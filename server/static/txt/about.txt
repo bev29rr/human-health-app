@@ -1,0 +1,12 @@
+Here at HHA, we specialise in bringing you the best decentralised, all-in-one toolbox for healthcare. This is because we believe that you should
+have the right to monitor yourself without sending all of the data online and potentially visible to everyone. Our team also specialses in 
+developing up-to-date APIs so that new devices can be easily wired to the server. <br>
+Our team: <br>
+<ul class="no-bullets">
+    <li><a href="https://github.com/bev29rr" target="_blank"><b>Ben</b></a> - Main backend developer</li>
+    <li><a href="https://github.com/Dantei00" target="_blank"><b>Dante</b></a> - Main frontend developer</li>
+    <li><a href="https://github.com/william1028st" target="_blank"><b>William</b></a> - Frontend developer</li>
+    <li><a href="https://github.com/ruben190" target="_blank"><b>Ruben</b></a> - Primary Researcher</li>
+    <li><a href="https://github.com/Jeremy-Courten" target="_blank"><b>Jeremy</b></a> - Researcher</li>
+    <li><a href="https://github.com/sh0bh1t06" target="_blank"><b>Shobbit</b></a> - Researcher</li>
+</ul>
