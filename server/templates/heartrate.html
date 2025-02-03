@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HHA - Template</title>
+    <title>Heartrate - HHA</title>
     <link rel="stylesheet" href="/static/css/style.css">
 </head>
 <body>
@@ -22,12 +22,20 @@
     </header>
     <main>
         <section>
-            <h2>Page Title</h2>
-            <p>Content goes here...</p>
+            <h2>Heart rate monitor</h2>
+            <p>Load from internet</p>
+            <label class="switch">
+                <input type="checkbox" id="toggleNetLoad" checked>
+                <span class="slider round"></span>
+            </label>
+            <br>
+            <canvas id="heartRateCanvas" width="500" height="250"></canvas>
         </section>
     </main>
     <footer>
         <p>&copy; 2025 HHA. All rights reserved.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/smoothie"></script>
+    <script src="/static/js/heartrate.js"></script>
 </body>
 </html>

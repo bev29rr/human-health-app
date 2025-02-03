@@ -1,0 +1,7 @@
+{
+    "auto_reset": true,
+    "users": [
+        {"username": "admin", "password": "admin123"},
+        {"username": "bob", "password": "securepass"}
+    ]
+}
