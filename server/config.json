@@ -1,5 +1,6 @@
 {
     "auto_reset": true,
+    "database": "database.db", 
     "users": [
         {"username": "admin", "password": "admin123"},
         {"username": "bob", "password": "securepass"}
