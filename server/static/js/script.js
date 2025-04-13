@@ -3,7 +3,7 @@ let second = 2;
 let third = first + second;
 console.log(third);
 
-fetch('/status', { method: 'GET' })
+fetch('/api/status', { method: 'GET' })
 .then(response => response.json())
 .then(data => {
     console.log(data);

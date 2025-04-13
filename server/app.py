@@ -1,4 +1,4 @@
-from flask import Flask, send_from_directory, render_template, jsonify, g
+from flask import Flask, send_from_directory, render_template, jsonify, g, abort
 import atexit, os, jinja2, json, secrets
 from api import api, get_db
 
@@ -39,21 +39,21 @@ def serve_html(filename):
     try:
         return render_template(f'{filename}.html')
     except jinja2.exceptions.TemplateNotFound:
-        return jsonify({"error": f"Template {filename}.html not found."}), 404
+        abort(404)
 
 @app.route('/static/css/<filename>')
 def serve_css(filename):
     try:
         return send_from_directory(os.path.join(STATIC_DIR, 'css'), filename)
     except FileNotFoundError:
-        return f"The CSS file {filename} isn't available", 404
+        abort(404)
 
 @app.route('/static/js/<filename>')
 def serve_js(filename):
     try:
         return send_from_directory(os.path.join(STATIC_DIR, 'js'), filename)
     except FileNotFoundError:
-        return f"The JS file {filename} isn't available", 404
+        abort(404)
 
 @app.route('/')
 def index():
@@ -62,7 +62,7 @@ def index():
 
 @app.errorhandler(404)
 def not_found(error):
-    return jsonify({"error": "Page not found", "message": "The requested URL was not found on the server."}), 404
+    return render_template('404.html'), 404
 
 if __name__ == '__main__':
     app.run(debug=False)

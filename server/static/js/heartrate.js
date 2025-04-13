@@ -13,7 +13,7 @@ const heartRateLine = new TimeSeries();
 async function fetchHeartRate() {
     if (fetchServer) {
         try {
-            const response = await fetch("/heartRate");
+            const response = await fetch("/api/heartRate");
             const data = await response.json();
             if (data.bpm) {
                 heartRateLine.append(new Date().getTime(), data.bpm);

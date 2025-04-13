@@ -1,0 +1,14 @@
+main {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 100px;
+}
+h1.error {
+    font-size: 60px;
+    color: #333;
+}
+p.error {
+    font-size: 24px;
+    color: #666;
+}

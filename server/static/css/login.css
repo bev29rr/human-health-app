@@ -7,18 +7,18 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 80vh;
 }
 
 .login-box {
-    position: relative;
-    width: 200%;
-    aspect-ratio: 5/4;
-    padding: 10%;
+    width: 100%;
+    max-width: 500px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
     text-align: center;
+    padding: 40px;
 }
 
 .input-group {
@@ -43,6 +43,7 @@ main {
     left: 10px;
     transform: translateY(-50%);
     color: #000;
+    pointer-events: none;
     transition: 0.3s ease-in-out;
 }
 
