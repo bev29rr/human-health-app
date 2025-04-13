@@ -10,15 +10,6 @@ body {
     color: #333;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-b {
-    color: var(--main);
-}
-
 main {
     padding: 50px 20px;
 }

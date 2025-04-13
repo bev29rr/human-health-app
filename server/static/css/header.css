@@ -16,6 +16,15 @@ body {
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+b {
+    color: var(--main);
+}
+
 header {
     background-color: var(--main);
     color: white;
